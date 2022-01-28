@@ -1,6 +1,6 @@
 @use 'layout/header';
 @use 'layout/cards';
-@use 'layout/cards';
+@use 'abstract/variables';
 *,
 *::before,
 *::after {
@@ -12,32 +12,61 @@
 body {
   margin: 0;
   padding: 0;
+  height: auto;
+  width: auto;
 }
 
+/* font styles */
 h1 {
-  font-size: 2rem;
+  font-size: 3.5rem;
+  color: #ffffff;
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 2.5rem;
+  color: #335567;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  color: #335567;
 }
 
+h4 {
+  font-size: 0.75rem;
+  color: #DB7A4E;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* header layout*/
 .header {
-  background-color: white;
+  background-color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: fixed;
+  width: 100%;
 }
 
 .header .title {
   margin: 1rem 0 0 5rem;
+  color: #335567;
+  font-size: 1.25rem;
 }
 
 .header .nav__list {
@@ -53,15 +82,22 @@ h3 {
 
 .header .nav__list .nav__link {
   text-decoration: none;
+  color: black;
 }
 
 .header .nav__list .nav__item {
   margin: 0 1rem;
 }
 
+/* main layout */
+.main {
+  /* hero styles*/
+  /* vacation styles */
+}
+
 .main .hero {
   width: 100%;
-  height: 30rem;
+  height: 31rem;
   background-color: #FEFAF5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,54 +105,157 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 3rem;
+  margin: 0;
 }
 
 .main .hero .hero__box {
-  display: inline;
-  width: 50%;
-  height: 100%;
+  text-align: left;
 }
 
-.main .hero .hero__box-text .hero__title {
-  padding: 8rem 5rem 1rem 5rem;
+.main .hero .hero__title {
+  color: #335567;
+  padding: 5rem 5rem 1rem 5rem;
+  margin: 0;
 }
 
-.main .hero .hero__box-text .hero__text {
-  padding-left: 5rem;
+.main .hero .hero__text {
+  color: #335567;
+  padding: 0 2rem 1rem 5rem;
 }
 
-.main .hero .hero__box-text .hero__button {
+.main .hero .hero__button {
+  margin-top: 1rem;
+  font-size: 1rem;
+  width: 11rem;
+  height: 2.75rem;
+  color: #FFFFFF;
   margin-left: 5rem;
+  background-color: #DB7A4E;
+  border: none;
+  border-radius: 2rem;
 }
 
-.main .hero .hero__image {
+.main .hero .hero__box-image {
+  height: 100%;
+  width: 50%;
   display: inline;
-  height: auto;
-  max-width: 65%;
-  text-align: center;
-  margin: 10% 20%;
+  margin: 2rem 7.5rem 2rem 2rem;
+}
+
+.main .hero .hero__box-image .hero__image {
+  display: inline;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .main .vacation {
   width: 100%;
   height: 30rem;
   background-color: white;
+  text-align: left;
 }
 
-.main .vacation__section {
+.main .vacation .vacation__title {
+  margin: 2.5rem 0 0 5rem;
+}
+
+.main .vacation .vacation__section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 12.5rem 0 13.5rem;
 }
 
-.main .vacation__section .vacation__article {
-  padding: 10%;
+.main .vacation .vacation__section .vacation__link {
+  text-decoration: none;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid;
+  border-color: rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
 }
 
-.main .vacation__section .vacation__image {
-  height: 100%;
-  width: 100%;
+.main .vacation .vacation__section .vacation__link .vacation__article {
+  height: 22rem;
+  width: 16rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  border-radius: 0.3125rem;
+}
+
+.main .vacation .vacation__section .vacation__link .vacation__article .vacation__card-title {
+  color: #FFFFFF;
+  padding: 17.5rem 1rem 0 0;
+}
+
+.main .vacation .vacation__section .vacation__article-hawaii {
+  background-image: url(../assets/images/hawaii.jpg);
+  background-size: cover;
+  border-collapse: separate;
+}
+
+.main .vacation .vacation__section .vacation__article-iceland {
+  background-image: url(../assets/images/iceland.jpg);
+  background-size: cover;
+}
+
+.main .vacation .vacation__section .vacation__article-greece {
+  background-image: url(../assets/images/greece.jpg);
+  background-size: cover;
+}
+
+/* footer styles*/
+.footer {
+  height: 15rem;
+  padding-left: 13.5rem;
+  background-color: #FEFAF5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer__container {
+  padding-right: 5rem;
+}
+
+.footer .footer__container .footer__title {
+  margin: 2.5rem 0;
+}
+
+.footer .footer__container .footer__text {
+  margin: 1.25rem 0;
+  color: #335567;
+}
+
+.footer .footer__container .footer__container-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer .footer__container .footer__container-div .footer__div {
+  padding-right: 2rem;
+}
+
+.footer .footer__container .footer__link {
+  margin-right: 1.5rem;
+}
+
+.footer .footer__container .footer__icon {
+  max-height: 1.5rem;
+  max-width: 1.5rem;
+  margin-top: 1.7rem;
 }
 /*# sourceMappingURL=main.css.map */

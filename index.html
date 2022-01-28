@@ -28,7 +28,7 @@
         <p class="hero__text">Don't let your dreams be just dreams. Experience the world by booking a vacation with us now.</p>
         <button class="hero__button">Get started</button>
         </div>
-        <div class="hero__box">
+        <div class="hero__box hero__box-image">
         <img class="hero__image" src="assets/images/hero.png"/>
         </d>
         </section>
@@ -38,33 +38,23 @@
             <h3 class="vacation__title">Recommendations</h3>
             
             <div class="vacation__section">
-            <article class="vacation__article">
+
             <a href="" class="vacation__link">
-                <card class="vacation__card">
-                    <img src="assets/images/hawaii.jpg" class="vacation__image"/>
-                    <h3 class="vacation__title">Hawaii</h3>
-                </card>
+            <article class="vacation__article vacation__article-hawaii">
+                    <h3 class="vacation__card-title">Hawaii</h3>
+            </article>
+            </a> 
+            <a href="" class="vacation__link">
+            <article class="vacation__article vacation__article-iceland">
+                    <h3 class="vacation__card-title">Iceland</h3>
+            </article>
             </a>
+            <a href="" class="vacation__link">
+            <article class="vacation__article vacation__article-greece">
+                    <h3 class="vacation__card-title">Greece</h3>
             </article>
-            
+            </a>
 
-            <article class="vacation__article">
-                <a href="" class="vacation__link">
-                    <card class="vacation__card">
-                    <img src="assets/images/iceland.jpg" class="vacation__image"/>
-                    <h3 class="vacation__title">Iceland</h3>
-                </card>
-                </a>
-            </article>
-
-            <article class="vacation__article">
-                <a href="" class="vacation__link">
-                    <card class="vacation__card">
-                    <img src="assets/images/greece.jpg" class="vacation__image"/>
-                    <h3 class="vacation__title">Greece</h3>
-                    </card>
-                </a>
-            </article>
             </div>
 
         </section>    
@@ -72,30 +62,45 @@
     </main>
 
     <footer class="footer">
-        <card class="footer__card">
+
+        <div class="footer__container">
             <h3 class="footer__title">Contact</h3>
-            <h5 class="footer__info">EMAIL</h5>
+            <h4 class="footer__info">EMAIL</h5>
             <a href="info@travelsite.com" target="_blank" class="footer__email"><p class="footer__text">info@travelsite.com</p></a>
-        </card>
-        <card class="footer__card">
+        </div>
+
+        <div class="footer__container">
+
             <h3 class="footer__title">Hours</h3>
+
+            <div class="footer__container-div">
+
             <div class="footer__div">
-                <h5 class="footer__info">MONDAY - FRIDAY</h5>
-                <h5 class="footer__info">SATURDAY</h5>
-                <h5 class="footer__info">SUNDAY</h5>
-            </div>
-            <div class="footer__div">
+                <h4 class="footer__info">MONDAY - FRIDAY</h5>
                 <p class="footer__text">9:00 AM - 5:00 PM</p>
+            </div>
+
+            <div class="footer__div">
+                <h4 class="footer__info">SATURDAY</h5>
                 <p class="footer__text">10:00 AM - 4:00 PM</p>
+            </div>
+
+            <div class="footer__div">
+                <h4 class="footer__info">SUNDAY</h5>
                 <p class="footer__text">Closed</p>
             </div>
-        </card>
-        <card class="footer__card">
+            </div>
+
+
+        </div>
+
+        <div class="footer__container">
+
             <h3 class="footer__title">Social</h3>
             <a href="https://www.instagram.com" target="_blank" class="footer__link"><img src="assets/icons/icon-instagram.png" class="footer__icon"></a>
             <a href="https://www.facebook.com" target="_blank" class="footer__link"><img src="assets/icons/icon-facebook.png" class="footer__icon"></a>
             <a href="https://www.twitter.com" target="_blank" class="footer__link"><img src="assets/icons/icon-twitter.png" class="footer__icon"></a>
-        </card>
+        </div>
     </footer>
 </body>
 </html>
