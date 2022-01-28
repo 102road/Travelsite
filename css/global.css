@@ -1,1 +1,134 @@
-/* No CSS *//*# sourceMappingURL=global.css.map */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: auto;
+}
+
+/* font styles */
+h1 {
+  font-size: 3.5rem;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #335567;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #335567;
+}
+
+h4 {
+  font-size: 0.75rem;
+  color: #DB7A4E;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* header layout*/
+.header {
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
+
+.header .title {
+  margin: 1rem 0 0 5rem;
+  color: #335567;
+  font-size: 1.25rem;
+}
+
+.header .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style-type: none;
+  margin-right: 5rem;
+}
+
+.header .nav__list .nav__link {
+  text-decoration: none;
+  color: black;
+}
+
+.header .nav__list .nav__item {
+  margin: 0 1rem;
+}
+
+/* footer styles*/
+.footer {
+  height: 15rem;
+  padding-left: 13.5rem;
+  background-color: #FEFAF5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer__container {
+  padding-right: 5rem;
+}
+
+.footer .footer__container .footer__title {
+  margin: 2.5rem 0;
+}
+
+.footer .footer__container .footer__text {
+  margin: 1.25rem 0;
+  color: #335567;
+}
+
+.footer .footer__container .footer__container-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer .footer__container .footer__container-div .footer__div {
+  padding-right: 2rem;
+}
+
+.footer .footer__container .footer__link {
+  margin-right: 1.5rem;
+}
+
+.footer .footer__container .footer__icon {
+  max-height: 1.5rem;
+  max-width: 1.5rem;
+  margin-top: 1.7rem;
+}
+/*# sourceMappingURL=global.css.map */
