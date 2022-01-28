@@ -1,0 +1,122 @@
+@use 'layout/header';
+@use 'layout/cards';
+@use 'layout/cards';
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+.header {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .title {
+  margin: 1rem 0 0 5rem;
+}
+
+.header .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style-type: none;
+  margin-right: 5rem;
+}
+
+.header .nav__list .nav__link {
+  text-decoration: none;
+}
+
+.header .nav__list .nav__item {
+  margin: 0 1rem;
+}
+
+.main .hero {
+  width: 100%;
+  height: 30rem;
+  background-color: #FEFAF5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .hero .hero__box {
+  display: inline;
+  width: 50%;
+  height: 100%;
+}
+
+.main .hero .hero__box-text .hero__title {
+  padding: 8rem 5rem 1rem 5rem;
+}
+
+.main .hero .hero__box-text .hero__text {
+  padding-left: 5rem;
+}
+
+.main .hero .hero__box-text .hero__button {
+  margin-left: 5rem;
+}
+
+.main .hero .hero__image {
+  display: inline;
+  height: auto;
+  max-width: 65%;
+  text-align: center;
+  margin: 10% 20%;
+}
+
+.main .vacation {
+  width: 100%;
+  height: 30rem;
+  background-color: white;
+}
+
+.main .vacation__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main .vacation__section .vacation__article {
+  padding: 10%;
+}
+
+.main .vacation__section .vacation__image {
+  height: 100%;
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */
