@@ -37,11 +37,11 @@
 }
 
 .main .hero .hero__button {
-  margin-top: 1rem;
-  font-size: 1rem;
   width: 11rem;
   height: 2.75rem;
   color: #FFFFFF;
+  font-size: 1rem;
+  margin-top: 1rem;
   margin-left: 5rem;
   background-color: #DB7A4E;
   border: none;
@@ -49,16 +49,16 @@
 }
 
 .main .hero .hero__box-image {
-  height: 100%;
   width: 50%;
+  height: 100%;
   display: inline;
   margin: 2rem 7.5rem 2rem 2rem;
 }
 
 .main .hero .hero__box-image .hero__image {
-  display: inline;
   max-width: 100%;
   max-height: 100%;
+  display: inline;
 }
 
 .main .vacation {
@@ -92,8 +92,8 @@
 }
 
 .main .vacation .vacation__section .vacation__link .vacation__article {
-  height: 22rem;
   width: 16rem;
+  height: 22rem;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,7 +112,6 @@
 .main .vacation .vacation__section .vacation__article-hawaii {
   background-image: url(../assets/images/hawaii.jpg);
   background-size: cover;
-  border-collapse: separate;
 }
 
 .main .vacation .vacation__section .vacation__article-iceland {

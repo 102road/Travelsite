@@ -15,7 +15,7 @@ body {
 
 /* font styles */
 h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   color: #ffffff;
 }
 
@@ -32,10 +32,12 @@ h3 {
 h4 {
   font-size: 0.75rem;
   color: #DB7A4E;
+  font-weight: 100;
 }
 
 p {
   font-size: 1rem;
+  font-weight: 200;
 }
 
 h1, h2, h3, h4, p {
@@ -58,6 +60,7 @@ a {
           justify-content: space-between;
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 
 .header .title {
@@ -75,6 +78,7 @@ a {
           justify-content: space-evenly;
   list-style-type: none;
   margin-right: 5rem;
+  margin-bottom: 0;
 }
 
 .header .nav__list .nav__link {
@@ -83,7 +87,12 @@ a {
 }
 
 .header .nav__list .nav__item {
-  margin: 0 1rem;
+  margin: 0 1rem 0.5rem 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.header .nav__list .nav__item:hover, .header .nav__list .nav__item--active {
+  border-bottom: 0.25rem solid #DB7A4E;
 }
 
 /* footer styles*/

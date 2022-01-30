@@ -1,33 +1,45 @@
     .main{
         width: 100%;
-        height: 45rem;
-        background-image: url(../assets/images/greece.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 50% 50%;
-        background-size: cover;
-        margin:0;
-            .main__title,{
+        height: 50rem;
+        position: relative;
+        .main__container{
+            position: relative;
+            height: 100%;
+            width: 100%;
+            .main__image{
+                width: 100%;
+                height:100%;
+                object-fit: cover;
+                position:absolute;
+                z-index: 0;
+            }
+            .main__title{
                 color: #FFFFFF;
-                padding: 5rem 5rem 1rem 5rem;
                 margin: 0;
-                display:block;
+                display:inline;
+                z-index: 1;
+                position:absolute;
+                margin: 8% 0 0 7.5%;
             }
             .main__div{
                 display: flex;
                 justify-content: space-around;
-                padding: 2rem 12.5rem 0 12.5rem;
+                position: absolute;
+                z-index: 1;
+                margin: 17.5% 0 0 17.5%;
                 .main__card{
                     background-color: #ffffff;
                     height: 25rem;
-                    width: 15rem;
+                    width: 16rem;
                     text-align: center;
                     border-radius: 0.3125rem;
+                    margin: 0 1rem;
                     .main__card-div{
                         padding: 0 1rem;
                     .main__card-title{
                         color: black;
-                        font-size: 1rem;
+                        font-size: 1.25rem;
+                        font-weight: 700;
                         border-bottom: 0.1rem solid black;
                         padding-top: 1rem;
                     }
@@ -38,9 +50,12 @@
                         .main__list-item{
                             background-color: #fefaf5;
                             margin: 1.25rem 0;
-                            padding: 1.25rem 0;
+                            padding: 0.8rem 0;
+                            font-size: 1.25rem;
+                            font-weight: 300;
                         }
                     }
+                }
             }
         }
     }
