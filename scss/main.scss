@@ -1,90 +1,76 @@
-@use 'layout/header';
-@use 'layout/cards';
-@use 'abstract/variables';
-
-
-
-/* main layout */
-
-.main{
 
     /* hero styles*/
-
-    .hero{
-        width: 100%;
-        height: 31rem;
-        background-color: #FEFAF5;
-        display: flex;
-        justify-content:space-between;
-        padding-top: 3rem;
-        margin:0;
-        .hero__box{
-            text-align: left;
-        }
-            .hero__title,{
-                color: #335567;
-                padding: 5rem 5rem 1rem 5rem;
-                margin: 0;
-            }
-            .hero__text{
-                color: #335567;
-                padding: 0 2rem 1rem 5rem;
-            }
-            .hero__button{
-                width: 11rem;
-                height: 2.75rem;
-                color: #FFFFFF;
-                font-size: 1rem;
-                margin-top: 1rem;
-                margin-left: 5rem;
-                background-color: #DB7A4E;
-                border:none;
-                border-radius: 2rem;
-            }
-            .hero__box-image{
-                width: 50%;
-                height: 100%;
-                display: inline;
-                margin: 2rem 7.5rem 2rem 2rem;
-                .hero__image{
-                    max-width: 100%;
-                    max-height: 100%;
-                    display: inline;
-                }
-            }
-        }
-
-    /* vacation styles */
-
-    .vacation{
-        width: 100%;
-        height: 30rem;
-        background-color: white;
+.hero{
+    width: 100%;
+    height: 31rem;
+    background-color: #FEFAF5;
+    display: flex;
+    justify-content:space-between;
+    padding-top: 3rem;
+    margin:0;
+    .hero__box{
         text-align: left;
-        .vacation__title{
-            margin: 2.5rem 0 0 5rem;
+    }
+    .hero__title{
+        color: #335567;
+        padding: 5rem 5rem 1rem 5rem;
+        margin: 0;
+    }
+    .hero__text{
+        color: #335567;
+        padding: 0 2rem 1rem 5rem;
+    }
+    .hero__button{
+        width: 11rem;
+        height: 2.75rem;
+        color: #FFFFFF;
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-left: 5rem;
+        background-color: #DB7A4E;
+        border:none;
+        border-radius: 2rem;
+    }
+    .hero__box-image{
+        width: 50%;
+        height: 100%;
+        display: inline;
+        margin: 2rem 7.5rem 2rem 2rem;
+        .hero__image{
+            max-width: 100%;
+            max-height: 100%;
+            display: inline;
         }
-        .vacation__section{
-            display: flex;
-            justify-content: space-between;
-            padding: 2rem 12.5rem 0 13.5rem;
-            .vacation__link{
-                text-decoration: none;
+    }
+}
+.vacation{
+    width: 100%;
+    height: 30rem;
+    background-color: white;
+    text-align: left;
+    .vacation__title{
+        margin: 2.5rem 0 0 5rem;
+    }
+    .vacation__section{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 12.5rem 0 13.5rem;
+        .vacation__link{
+            text-decoration: none;
+            border-radius: 0.3125rem;
+            border: 0.0625rem solid;
+            border-color: rgba($color: #000000, $alpha: 0.2);
+            box-shadow: 0 0.25rem 0.25rem rgba($color: #000000, $alpha: 0.2);
+            .vacation__article{
+                width: 16rem;
+                height: 22rem;
+                text-align: center;
+                display: flex;
+                justify-content: end;
                 border-radius: 0.3125rem;
-                border: 0.0625rem solid;
-                border-color: rgba($color: #000000, $alpha: 0.2);
-                box-shadow: 0 0.25rem 0.25rem rgba($color: #000000, $alpha: 0.2);
-                
-                .vacation__article{
-                    width: 16rem;
-                    height: 22rem;
-                    text-align: center;
-                    display: flex;
-                    justify-content: end;
-                    border-radius: 0.3125rem;
-                    .vacation__card-title{
-                        color: #FFFFFF;
-                        padding: 17.5rem 1rem 0 0;
+                .vacation__card-title{
+                    color: #FFFFFF;
+                    padding: 17.5rem 1rem 0 0;
                     }
                 }
             }
@@ -102,5 +88,5 @@
             }            
         }
     }
-}
+
 

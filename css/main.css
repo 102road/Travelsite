@@ -1,13 +1,5 @@
-@use 'layout/header';
-@use 'layout/cards';
-@use 'abstract/variables';
-/* main layout */
-.main {
-  /* hero styles*/
-  /* vacation styles */
-}
-
-.main .hero {
+/* hero styles*/
+.hero {
   width: 100%;
   height: 31rem;
   background-color: #FEFAF5;
@@ -21,22 +13,22 @@
   margin: 0;
 }
 
-.main .hero .hero__box {
+.hero .hero__box {
   text-align: left;
 }
 
-.main .hero .hero__title {
+.hero .hero__title {
   color: #335567;
   padding: 5rem 5rem 1rem 5rem;
   margin: 0;
 }
 
-.main .hero .hero__text {
+.hero .hero__text {
   color: #335567;
   padding: 0 2rem 1rem 5rem;
 }
 
-.main .hero .hero__button {
+.hero .hero__button {
   width: 11rem;
   height: 2.75rem;
   color: #FFFFFF;
@@ -48,31 +40,31 @@
   border-radius: 2rem;
 }
 
-.main .hero .hero__box-image {
+.hero .hero__box-image {
   width: 50%;
   height: 100%;
   display: inline;
   margin: 2rem 7.5rem 2rem 2rem;
 }
 
-.main .hero .hero__box-image .hero__image {
+.hero .hero__box-image .hero__image {
   max-width: 100%;
   max-height: 100%;
   display: inline;
 }
 
-.main .vacation {
+.vacation {
   width: 100%;
   height: 30rem;
   background-color: white;
   text-align: left;
 }
 
-.main .vacation .vacation__title {
+.vacation .vacation__title {
   margin: 2.5rem 0 0 5rem;
 }
 
-.main .vacation .vacation__section {
+.vacation .vacation__section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,7 +74,7 @@
   padding: 2rem 12.5rem 0 13.5rem;
 }
 
-.main .vacation .vacation__section .vacation__link {
+.vacation .vacation__section .vacation__link {
   text-decoration: none;
   border-radius: 0.3125rem;
   border: 0.0625rem solid;
@@ -91,7 +83,7 @@
           box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
 }
 
-.main .vacation .vacation__section .vacation__link .vacation__article {
+.vacation .vacation__section .vacation__link .vacation__article {
   width: 16rem;
   height: 22rem;
   text-align: center;
@@ -104,22 +96,22 @@
   border-radius: 0.3125rem;
 }
 
-.main .vacation .vacation__section .vacation__link .vacation__article .vacation__card-title {
+.vacation .vacation__section .vacation__link .vacation__article .vacation__card-title {
   color: #FFFFFF;
   padding: 17.5rem 1rem 0 0;
 }
 
-.main .vacation .vacation__section .vacation__article-hawaii {
+.vacation .vacation__section .vacation__article-hawaii {
   background-image: url(../assets/images/hawaii.jpg);
   background-size: cover;
 }
 
-.main .vacation .vacation__section .vacation__article-iceland {
+.vacation .vacation__section .vacation__article-iceland {
   background-image: url(../assets/images/iceland.jpg);
   background-size: cover;
 }
 
-.main .vacation .vacation__section .vacation__article-greece {
+.vacation .vacation__section .vacation__article-greece {
   background-image: url(../assets/images/greece.jpg);
   background-size: cover;
 }
